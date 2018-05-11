@@ -105,7 +105,7 @@ pipeline {
 
     post { 
         failure { 
-            mail bcc: '', body: "Check  ${env.BUILD_TAG}", cc: '', from: '', replyTo: '', subject: "${env.BUILD_TAG} - Error", to: 'danielahcardona@gmail.com'
+            mail bcc: '', body: "Check   ${env.BUILD_TAG}", cc: '', from: '', replyTo: '', subject: "${env.BUILD_TAG} - Error", to: 'danielahcardona@gmail.com'
         }
     }
 }

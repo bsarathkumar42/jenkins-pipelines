@@ -78,6 +78,7 @@ pipeline {
                     } catch(Exception e) {
                         echo "Error: ${e}"
                     }
+
                     
                     // read the port information in order to redirect it
                     def datas = readYaml file: "src/main/resources/application.yml"
@@ -104,7 +105,9 @@ pipeline {
 
     post { 
         failure { 
-            mail bcc: '', body: "Check ${env.BUILD_TAG}", cc: '', from: '', replyTo: '', subject: "${env.BUILD_TAG} - Error", to: 'danielahcardona@gmail.com'
+            mail bcc: '', body: "Check  ${env.BUILD_TAG}", cc: '', from: '', replyTo: '', subject: "${env.BUILD_TAG} - Error", to: 'danielahcardona@gmail.com'
         }
     }
 }
+
+

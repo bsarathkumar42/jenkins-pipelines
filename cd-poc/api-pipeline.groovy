@@ -15,7 +15,7 @@ pipeline {
     }
 
     /*
-    //    Any environment variable need it must be here
+    //    Any environment variable need it must be here ..
     
     environment {
     }

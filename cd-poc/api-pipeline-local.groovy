@@ -1,7 +1,7 @@
 pipeline {
 
     /*
-    Definition where the agent will run, for this time it is running in the Master server
+       Definition where the agent will run, for this time it is running in the Master server
      */
     agent {
         label 'master'
